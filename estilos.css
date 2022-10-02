@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*header*/
+header {
+    background-image: url("./img/header.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-encabezado {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+}
+
+nav>a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+nav>a:hover {
+    transform: scale(1.1);
+    color: #DF8716;
+}
+
+header h1 {
+    margin: 0 10%;
+    font-weight: 900;
+    line-height: 2em;
+    padding: .75rem 0;
+    width: 40vw;
+    color:aqua;
+}
+
+/*fin de header*/
+
+h2 {
+    font-weight: 300;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main {
+    margin: 0 10%;
+}
+
+.sobrenosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0 10%;
+}
+
+.sobre {
+    text-align: center;
+    margin: 1rem 0;
+    width: 25vw;
+}
+
+.sobre h3 {
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.sobre p {
+    font-size: smaller;
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.sobre img {
+    height: 10vw;
+}
+
+.enventa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.propiedad {
+    border: 1px solid black;
+    width: 25vw;
+}
+
+.propiedad img {
+    width: 25vw;
+}
+
+.propiedad h3 {
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.propiedad p {
+    line-height: 2em;
+    font-size: smaller;
+    padding: 0 1em;
+}
+
+.propiedad .precio {
+    color: #71B11F;
+    font-weight: 900;
+}
+
+.iconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.boton {
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 1rem;
+    color: white;
+}
+
+.boton>a {
+    text-decoration: none;
+}
+
+.boton>a:visited {
+    color: white;
+}
+
+.naranja {
+    background-color: #DF8716;
+}
+
+.verde {
+    background-color: #94ff07;
+}
+
+.contacto {
+    background-image: url("./img/encuentra.jpg");
+    height: 35vh;
+    background-size: cover;
+
+}
+
+.infocontacto {
+    margin: 0 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: rgb(131, 122, 122);
+}
+
+.blogtextcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.blogItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.blogItem h4 {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.blogItem>img {
+    height: 25vh;
+    margin-right: 0.5rem;
+}
+
+.lineaverde {
+    background-color: #294305;
+    height: .3em;
+    width: 10em;
+}
+
+.blogItem p {
+    padding: .5rem 0;
+    font-size: medium;
+    line-height: 1.5em;
+}
+
+.blogItem p span {
+    color: #f05b0b
+}
+
+.testimoniales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.5rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    background-color: #71B11F;
+    border-radius: 1em;
+    color: rgb(179, 212, 246);
+    padding: 1em;
+    font-size: medium;
+    line-height: 2em;
+    width: 20vw;
+    align-self: center;
+}
+
+.autor {
+    font-weight: bold;
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111112;
+    color: rgb(13, 236, 73);
+    height: 8vh;
+}
+
+.nav-foot {
+    justify-items: left;
+    margin-left: 10%;
+}
+
+footer p {
+    margin-right: 10%;
+    justify-items: right;
+}
+
+@media screen and (max-width: 991px) {
+    .menu-encabezado {
+        flex-direction: column;
+    }
+
+    header h1 {
+        width: 80vw;
+    }
+
+    main {
+        margin: 0 5%;
+    }
+
+    .blogtextcontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .blog {
+        width: 80vw;
+    }
+
+    .testimonial {
+        margin-right: unset;
+        width: 80vw;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-foot {
+        justify-self: center;
+        margin-left: unset;
+    }
+
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .sobrenosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sobre {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .sobre h3 {
+        font-weight: bolder;
+        padding: 1rem 0;
+    }
+
+    .sobre p {
+        font-size: smaller;
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
+
+    .sobre img {
+        height: 10vw;
+    }
+
+    .enventa {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .propiedad {
+        border: 1px solid black;
+        width: 80vw;
+        margin: .5rem 0;
+    }
+
+    .propiedad img {
+        width: 100%;
+    }
+
+    .blog {
+        width: 100%;
+        padding: 1.5rem;
+
+    }
+
+    .blogitem {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .blogitem>img {
+        margin-right: 0;
+    }
+
+
+
+
+}
